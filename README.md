@@ -1,0 +1,1 @@
+This YouTube cloning project is built using HTML, CSS, and JavaScript, featuring a simple interface for video playback and uploading. The project allows users to upload videos and watch them in a custom video player. It focuses on replicating essential YouTube functionalities, such as video playing and basic video management, providing a streamlined user experience.
