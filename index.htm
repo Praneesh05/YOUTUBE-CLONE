@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MyTube Clone</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body>
+    <div class="app">
+        <!-- Header -->
+        <header class="header">
+            <div class="header-content">
+                <div class="header-left">
+                    <button id="menu-toggle" class="icon-button">
+                        <i data-lucide="menu"></i>
+                    </button>
+                    <div class="logo">
+                        <i data-lucide="youtube" class="youtube-icon"></i>
+                        <span>MyTube</span>
+                    </div>
+                </div>
+                <div class="search-container">
+                    <input type="search" placeholder="Search" class="search-input">
+                </div>
+                <button id="upload-btn" class="upload-button">
+                    <i data-lucide="upload"></i>
+                    Upload
+                </button>
+                <input type="file" id="file-input" accept="video/*" style="display: none;">
+            </div>
+        </header>
+
+        <!-- Sidebar -->
+        <div id="sidebar" class="sidebar">
+            <div class="sidebar-content">
+                <button class="sidebar-item active">
+                    <i data-lucide="home"></i>
+                    <span>Home</span>
+                </button>
+                <button class="sidebar-item">
+                    <i data-lucide="compass"></i>
+                    <span>Explore</span>
+                </button>
+                <button class="sidebar-item">
+                    <i data-lucide="library"></i>
+                    <span>Library</span>
+                </button>
+                <button class="sidebar-item">
+                    <i data-lucide="history"></i>
+                    <span>History</span>
+                </button>
+                <button class="sidebar-item">
+                    <i data-lucide="film"></i>
+                    <span>Your videos</span>
+                </button>
+                <button class="sidebar-item">
+                    <i data-lucide="clock"></i>
+                    <span>Watch later</span>
+                </button>
+                <button class="sidebar-item">
+                    <i data-lucide="thumbs-up"></i>
+                    <span>Liked videos</span>
+                </button>
+            </div>
+        </div>
+
+        <!-- Main Content -->
+        <main id="main" class="main">
+            <!-- Categories -->
+            <div class="categories">
+                <div class="categories-container">
+                    <button class="category-btn active">All</button>
+                    <button class="category-btn">Music</button>
+                    <button class="category-btn">Gaming</button>
+                    <button class="category-btn">Sports</button>
+                    <button class="category-btn">Entertainment</button>
+                    <button class="category-btn">News</button>
+                    <button class="category-btn">Learning</button>
+                    <button class="category-btn">Fashion</button>
+                    <button class="category-btn">Beauty</button>
+                    <button class="category-btn">Science</button>
+                    <button class="category-btn">Technology</button>
+                </div>
+            </div>
+
+            <!-- Videos Grid -->
+            <div id="videos-grid" class="videos-grid">
+                <!-- Videos will be dynamically inserted here -->
+            </div>
+
+            <!-- Empty State -->
+            <div id="empty-state" class="empty-state" style="display: none;">
+                <p>No videos uploaded yet. Click the Upload button to get started!</p>
+            </div>
+        </main>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
